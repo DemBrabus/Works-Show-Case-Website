@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    cursor: grabbing;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+    font-family: dharma-gothic-c, sans-serif;
+    font-style: normal;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    color: #141414;
+    
+}
+
+// -- ^ Global ^ --
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-- Main Menu - Bar --
+.Menu-Bar {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    height: 100vh;
+    width: 90px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 10px 10px 25px #14141403;
+    transition: width .2s ease;
+    z-index: 999;
+}
+
+    .Menu-Bar-Inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        //Header
+        .Menu-Bar-Header {
+            cursor: auto;
+        }
+
+            .Menu-Bar-Header-Text {
+                font-size: 18px;
+                font-weight: 800;
+                transition: font-size .2s ease;
+            }
+
+        //Menu Icon
+        .Menu-Bar-Icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 30px;
+        }
+
+            .Menu-Bar-Icon-Inner {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                cursor: pointer;
+                z-index: 100;
+            }
+
+                .Menu-Bar-Icon-Line {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 50px;
+                    height: 1px;
+                    background-color: #141414;
+                    transition: all;
+                    
+                    
+                }
+
+                    .Menu-Bar-Icon-Line1 {
+                        top: 10px;
+                    }
+
+                    .Menu-Bar-Icon-Line2 {
+                        top: 20px;
+                    }
+
+                .Menu-Bar-Icon-Text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 15px;
+                    font-weight: 700;
+                    transition: all;
+                    transition-property: font-size opacity;
+                    z-index: 5;
+                }
+
+                    .Menu-Bar-Icon-Text-Menu {
+                        opacity: 0;
+                    }
+                    .Menu-Bar-Icon-Text-Close {
+                        opacity: 0;
+                    }
+
+        //Footer
+        .Menu-Bar-Footer {
+            position: relative;
+        }
+
+            .Menu-Bar-Tagline {
+                width: 100%;
+                margin-bottom: 10px;
+                cursor: auto;
+            }
+
+                .Menu-Bar-Tagline-Text {
+                    font-size: 13px;
+                    font-weight: 800;
+                    transition: font-size .2s ease;
+                }
+
+            .Menu-Bar-Footer-Copyright {
+                width: 100%;
+                cursor: auto;
+            }
+                .Menu-Bar-Footer-Copyright-Text {
+                    font-size: 12px;
+                    font-weight: 300;
+                    transition: font-size .2s ease;
+                }
+
+@media screen and (max-height: 700px){
+    .Menu-Bar {
+        width: 80px;
+    }
+    .Menu-Bar-Header-Text {
+        font-size: 14px;
+    }
+
+    .Menu-Bar-Tagline-Text {
+        font-size: 11px;
+    }
+    .Menu-Bar-Footer-Copyright-Text {
+        font-size: 9px;
+    }
+    .Menu-Bar-Icon-Line {
+        width: 40px;
+    }
+    .Menu-Bar-Icon-Text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .Menu-Bar {
+        width: 80px;
+    }
+    .Menu-Bar-Header-Text {
+        font-size: 14px;
+    }
+
+    .Menu-Bar-Tagline-Text {
+        font-size: 11px;
+    }
+    .Menu-Bar-Footer-Copyright-Text {
+        font-size: 9px;
+    }
+    .Menu-Bar-Icon-Line {
+        width: 40px;
+    }
+    .Menu-Bar-Icon-Text {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .Menu-Bar {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-- Mobile -- Main Menu - Bar --
+.Mobile-Menu-Bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100vw;
+    padding: 10px;
+    background-color: #f7f7f7;
+    display: none;
+    z-index: 999;
+}
+
+    .Mobile-Menu-Bar-Inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+    }
+
+        //Header
+        .Mobile-Menu-Bar-Header {
+            cursor: auto;
+            align-self: center;
+        }
+
+            .Mobile-Menu-Bar-Header-Text {
+                font-size: 14px;
+                font-weight: 800;
+                transition: font-size .2s ease;
+            }
+
+        //Menu Icon
+        .Mobile-Menu-Bar-Icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 12px;
+            width: 50px;
+            cursor: pointer;
+        }
+
+            .Mobile-Menu-Bar-Icon-Inner {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+
+                .Mobile-Menu-Bar-Icon-Line {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 50px;
+                    height: 1px;
+                    background-color: #141414;
+                    transition: all;
+                }
+
+                    .Mobile-Menu-Bar-Icon-Line1 {
+                        top: 0;
+                    }
+
+                    .Mobile-Menu-Bar-Icon-Line2 {
+                        bottom: 0;
+                    }
+
+        //Footer
+
+        .Mobile-Menu-Bar-Footer {
+            align-items: flex-end;
+        }
+
+            .Mobile-Menu-Bar-Footer-Copyright {
+                cursor: auto;
+                text-align: end;
+            }
+                .Mobile-Menu-Bar-Footer-Copyright-Text {
+                    font-size: 10px;
+                    font-weight: 300;
+                    transition: font-size .2s ease;
+                }
+
+@media screen and (max-width: 700px){
+    .Mobile-Menu-Bar {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .Mobile-Menu-Bar {
+        height: 60px;
+        padding: 10px 20px;
+    }
+
+    .Mobile-Menu-Bar-Header-Text {
+        font-size: 10px;
+    }
+    .Mobile-Menu-Bar-Footer-Copyright-Text {
+        font-size: 8px;
+    }
+    .Mobile-Menu-Bar-Icon {
+        width: 40px;
+    }
+    .Mobile-Menu-Bar-Icon-Line {
+        width: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//Desktop -- Main-Menu -----
+.Main-Menu {
+    position: fixed;
+    top: 0;
+    left: 90px;
+    left: calc(-100% + 90px);
+    bottom: 0;
+    width: calc(100vw - 90px);
+    height: 100vw;
+    padding: 40px;
+    background-color: #141414;
+    transition: left .8s ease;
+}
