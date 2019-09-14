@@ -11,6 +11,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const buildPath = path.resolve(__dirname, 'dist');
+const srcPath = path.resolve(__dirname, 'src');
 
 
 module.exports = {
@@ -40,7 +41,10 @@ module.exports = {
 
             {   // +ES6 Transpiler for older browsers
                 test: /\.js$/,
-                exclude: /node_modules/,
+                include: [
+                    srcPath,
+                    path.resolve(__dirname, 'node_modules/gsap'),
+                ],
                 loader: 'babel-loader',
                 options: {
                     presets: ['@babel/preset-env']
@@ -119,11 +123,11 @@ module.exports = {
         minimizer: [
 
             //Compiles and minifies JS files
-            new UglifyJsPlugin({
-                cache: true,
-                parallel: true,
-                sourceMap: true
-            }),
+            // new UglifyJsPlugin({
+            //     cache: true,
+            //     parallel: true,
+            //     sourceMap: true
+            // }),
 
             // Minimizes CSS assets
             new OptimizeCssAssetsPlugin({})
