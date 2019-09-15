@@ -2,7 +2,7 @@
 //Main Menu Functionality
 //
 
-import MainMenu from './MainMenu/EventCalls';
+import MainMenu from './EventCalls';
 
 
 

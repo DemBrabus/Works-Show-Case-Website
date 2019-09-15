@@ -1,0 +1,401 @@
+//
+// Main Menu Styles 
+//
+
+//Desktop -- Main-Menu -----
+.Main-Menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 90px;
+    background-color: #141414;
+    transition: left;
+    overflow-x: hidden;
+    z-index: 900;
+}
+
+    .Main-Menu-Inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 60px 100px;
+    }
+
+    //header
+        .Main-Menu-Header {
+            font-size: 80px;
+            font-weight: 700;
+            color: #f7f7f7;
+        }
+
+    //List
+        .Main-Menu-Work {
+            width: 100%;
+            color: #f7f7f7;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 80px;
+        }
+
+            .Main-Menu-Work-Desktop {
+                display: inline-block;
+            }
+
+            .Main-Menu-Work-Mobile {
+                display: inline-block;
+                margin-left: 350px;
+            }
+
+                .Main-Menu-Work-Header {
+                    font-size: 120px;
+                    font-family: dharma-gothic-e, sans-serif;
+                    font-weight: 100;
+                    font-style: normal;
+                    margin-bottom: 20px;
+                }
+
+                    .Main-Menu-Work-List {
+                        padding-left: 5px;
+                    }
+
+                        .Main-Menu-Work-Item {
+                            margin-bottom: 30px;
+                        }
+
+                            .Main-Menu-Work-Text {
+                                font-size: 16px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                cursor: pointer;
+                            }
+
+
+    //Footer
+        .Main-Menu-Footer {
+            position: absolute;
+            bottom: 70px;
+            left: 100px;
+            right: 0;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+        }
+
+            .Main-Menu-Footer-More {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-right: 200px;
+                
+            }
+
+                .Main-Menu-Footer-More-Header {
+                    color: #f7f7f7;
+                    text-decoration: none;
+                    font-size: 40px;
+                    font-family: dharma-gothic-e, sans-serif;
+                    font-weight: 100;
+                    font-style: normal;
+                    margin-bottom: 3px;
+                }
+                    
+                    .Main-Menu-Footer-More-Text {
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 200;
+                        color: #f7f7f7;
+                        text-decoration: none;
+                    }
+
+      
+            .Main-Menu-Footer-Contact {
+                font-size: 14px;
+                font-weight: 200;
+                color: #f7f7f7;
+                margin-right: 50px;
+                cursor: auto;
+            }
+
+            .Main-Menu-Footer-Line {
+                width: 70px;
+                height: 19px;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                position: relative;
+                margin-right: 50px;
+            }
+
+                .Main-Menu-Footer-Line-Inner {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 100%;
+                    height: 1px;
+                    background-color: #f7f7f7;
+                    opacity: .7;
+                    transition: all;
+                    
+                }
+
+            .Main-Menu-Footer-Email {
+                color: #f7f7f7;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: auto;
+
+            }
+
+        .MMF-Bold {
+            font-weight: 600;
+        }
+
+@media screen and (max-height: 700px){
+    .Main-Menu {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .Main-Menu {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 800px){
+    .Main-Menu-Inner  {
+        padding: 30px 70px;
+    }
+    .Main-Menu-Header {
+        font-size: 60px;
+    }
+    .Main-Menu-Work {
+        margin-top: 30px;
+    }
+    .Main-Menu-Work-Header {
+        font-size: 50px;
+    }
+    .Main-Menu-Work-Text {
+        font-size: 14px;
+    }
+    .Main-Menu-Footer {
+        left: 70px;
+        bottom: 40px;
+    }
+    .Main-Menu-Footer-More {
+        margin-right: 120px;
+    }
+    .Main-Menu-Footer-More-Header {
+        font-size: 32px;
+    }
+    .Main-Menu-Footer-More-Text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .Main-Menu-Footer-Contact {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .Main-Menu-Footer-Line {
+        height: 16px;
+        width: 40px;
+        margin-right: 20px;
+    }
+    .Main-Menu-Footer-Email {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1248px){
+    .Main-Menu-Inner  {
+        padding: 30px 70px;
+    }
+    .Main-Menu-Header {
+        font-size: 60px;
+    }
+    .Main-Menu-Work {
+        margin-top: 30px;
+    }
+    .Main-Menu-Work-Header {
+        font-size: 50px;
+    }
+    .Main-Menu-Work-Text {
+        font-size: 14px;
+    }
+    .Main-Menu-Footer {
+        left: 70px;
+        bottom: 40px;
+    }
+    .Main-Menu-Footer-More {
+        margin-right: 120px;
+    }
+    .Main-Menu-Footer-More-Header {
+        font-size: 32px;
+    }
+    .Main-Menu-Footer-More-Text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .Main-Menu-Footer-Contact {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+    .Main-Menu-Footer-Line {
+        height: 16px;
+        width: 40px;
+        margin-right: 20px;
+    }
+    .Main-Menu-Footer-Email {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 934px){
+    .Main-Menu-Work-Mobile {
+        margin-left: 180px;
+    }
+    .Main-Menu-Footer-More {
+        margin-right: 150px;
+    }
+    .Main-Menu-Footer-Contact {
+        display: none;
+    }
+    .Main-Menu-Footer-Line {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Mobile -- Main-Menu -----
+.Mobile-Main-Menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 70px;
+    background-color: #141414;
+    z-index: 900;
+    display: none;
+}
+
+    .Mobile-Main-Menu-Inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 40px 30px;
+    }
+
+        .Mobile-Main-Menu-Header {
+            font-size: 46px;
+            font-weight: 700;
+            color: #f7f7f7;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+
+        .Mobile-Main-Menu-Note {
+            color: #aeaeae;
+            font-size: 14px;
+            font-weight: 100;
+            margin-bottom: 60px;
+            white-space: nowrap;
+        }
+
+        .Mobile-Main-Menu-Work-Mobile {
+            width: 100%;
+        }
+
+            .Mobile-Main-Menu-Work-Header {
+                color: #f7f7f7;
+                font-size: 90px;
+                font-family: dharma-gothic-e, sans-serif;
+                font-weight: 100;
+                font-style: normal; 
+                margin-bottom: 30px;
+            }
+
+                .Mobile-Main-Menu-Work-List {
+
+                }
+
+                    .Mobile-Main-Menu-Work-Item {
+                        margin-bottom: 40px;
+                    }
+
+                        .Mobile-Main-Menu-Work-Text {
+                            font-size: 32px;
+                            color: #f7f7f7;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            white-space: nowrap;
+                        }
+
+
+
+@media screen and (max-width: 700px){
+    .Mobile-Main-Menu {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 720px){
+    .Mobile-Main-Menu-Header {
+        font-size: 24px;
+    }
+    .Mobile-Main-Menu-Note {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .Mobile-Main-Menu-Work-Text {
+        font-size: 18px;
+    }
+    .Mobile-Main-Menu-Work-Header {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .Mobile-Main-Menu {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .Mobile-Main-Menu-Header {
+        font-size: 24px;
+    }
+    .Mobile-Main-Menu-Note {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .Mobile-Main-Menu-Work-Text {
+        font-size: 18px;
+    }
+    .Mobile-Main-Menu-Work-Header {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-height: 550px){
+    .Mobile-Main-Menu-Work-Item {
+        margin-bottom: 20px;
+    }
+}
+
