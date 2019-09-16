@@ -2,6 +2,8 @@
 //Menu Bar (s) Styles
 //
 
+@import '../xxStyles.scss';
+
 
 //-- Main Menu - Bar --
 .Menu-Bar {
@@ -12,8 +14,8 @@
     height: 100vh;
     width: 90px;
     padding: 10px;
-    background-color: #f7f7f7;
-    box-shadow: 10px 10px 25px #14141403;
+    background-color: color(MenuBarBG);
+    box-shadow: 10px 10px 25px #14141406;
     z-index: 999;
 }
 
@@ -181,7 +183,7 @@
     height: 70px;
     width: 100vw;
     padding: 10px;
-    background-color: #f7f7f7;
+    background-color: color(MenuBarBG);
     display: none;
     z-index: 999;
 }

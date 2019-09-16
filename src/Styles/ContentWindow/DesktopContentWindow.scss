@@ -1,0 +1,52 @@
+//
+//Desktop Content Window
+//
+
+@import '../xxStyles.scss';
+
+.Desktop-Content-Window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 90px;
+    background-color: color(ContentWindow);
+    z-index: 1;
+}
+    
+    .Desktop-Content-Window-Inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+    }
+
+.Desktop-Section {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-height: 700px){
+    .Desktop-Content-Window {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .Desktop-Content-Window {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .Desktop-Content-Window {
+        display: none;
+    }
+}

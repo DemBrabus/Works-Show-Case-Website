@@ -7,8 +7,8 @@
 html {
     overflow-x: hidden;
     cursor: grabbing;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 
 body {
@@ -16,9 +16,7 @@ body {
     height: 100vh;
     position: relative;
     overflow-x: hidden;
-    background-color: #f5f5f5;
-    font-family: dharma-gothic-c, sans-serif;
-    font-style: normal;
+    background-color: #FFF;
     font-family: montserrat, sans-serif;
     font-style: normal;
     color: #141414;
@@ -38,16 +36,35 @@ a {
 
 
 //Variables --
-
+    $colors: (
+        BlackText: #141414,
+        WhiteText: #f7f7f7,
+        DarkWhiteText: #acacac,
+        ContentWindow: rgb(227, 226, 225),
+        MainMenuBG: #141414,
+        MenuBarBG: #f7f7f7,
+    );
 
 
 
 
 //Functions --
+    @function color($colorName){
+        @return map-get($colors, $colorName)
+    }
 
 
 
+//Fonts --
+    .dharma-gothic-c {
+        font-family: dharma-gothic-c, sans-serif;
+        font-style: normal;
+    }
 
+    .montserrat {
+        font-family: montserrat, sans-serif;
+        font-style: normal;
+    }
 
 
 
